@@ -17,5 +17,5 @@ jobs:
 
     steps:
       - name: deployment application
-        run: echo "Deployment Application..."
+        run: echo "Deployment Application to ${{ inputs.environment }} environment..."
         
