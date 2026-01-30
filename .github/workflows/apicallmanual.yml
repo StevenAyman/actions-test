@@ -1,0 +1,12 @@
+
+on:
+  repository_dispatch:
+    types: [incedent_report]
+
+jobs:
+  handle-incedent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Incedent Report
+        run: echo "Incedent Report"
