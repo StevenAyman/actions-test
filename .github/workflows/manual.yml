@@ -1,0 +1,21 @@
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Enter the environment"
+        required: true
+        default: Staging
+        type: choice
+        options:
+          - Staging
+          - Production
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: deployment application
+        run: echo "Deployment Application..."
+        
